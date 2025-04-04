@@ -43,7 +43,7 @@
                 <td>${nft.artistName}</td>
                 <td>${nft.status}</td>
                 <td>
-                    <a href="NFTServlet?action=edit&nftId=${nft.nftId}" class="btn btn-warning">Edit</a>
+                    <a href="/admin/nft/edit-form.jsp/${nft.nftId}" class="btn btn-warning">Edit</a>
                     <button class="btn btn-danger" onclick="confirmDelete(${nft.nftId})">Delete</button>
                 </td>
             </tr>
@@ -64,7 +64,7 @@
         </c:if>
     </div>
 
-    <a href="NFTServlet?action=add" class="btn btn-primary">Add New NFT</a>
+    <a href="${pageContext.request.contextPath}/admin/nft/create-form.jsp" class="btn btn-primary">Add New NFT</a>
 </div>
 
 <script>

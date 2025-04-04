@@ -81,7 +81,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Update NFT</button>
-        <a href="NFTServlet?action=list" class="btn btn-secondary">Cancel</a>
+        <a href="${pageContext.request.contextPath}/admin/nft/list.jsp" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
 </body>

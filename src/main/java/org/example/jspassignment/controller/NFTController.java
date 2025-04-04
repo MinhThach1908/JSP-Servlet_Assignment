@@ -111,7 +111,7 @@ public class NFTController extends HttpServlet {
         } else {
             nftRepository.save(nft);
             req.setAttribute("msg", "NFT saved");
-            resp.sendRedirect("NFTServlet?action=list");
+            resp.sendRedirect("/admin/nft/list.jsp");
         }
     }
 
@@ -148,7 +148,7 @@ public class NFTController extends HttpServlet {
             } else {
                 nftRepository.update(nftId, nft);
                 req.setAttribute("msg", "NFT updated successfully");
-                resp.sendRedirect("NFTServlet?action=list");
+                resp.sendRedirect("/admin/nft/list.jsp");
             }
         }
     }
@@ -158,6 +158,6 @@ public class NFTController extends HttpServlet {
         int nftId = Integer.parseInt(req.getParameter("nftId"));
         nftRepository.deleteById(nftId);
         req.setAttribute("msg", "NFT deleted successfully");
-        resp.sendRedirect("NFTServlet?action=list");
+        resp.sendRedirect("/admin/nft/list.jsp");
     }
 }

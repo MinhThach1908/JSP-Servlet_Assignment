@@ -56,7 +56,7 @@
                 <version>2.2</version>
                 <configuration>
                     <path>/</path>  <!-- Đường dẫn gốc -->
-                    <port>8080</port>  <!-- Cổng chạy Tomcat -->
+                    <port>8085</port>  <!-- Cổng chạy Tomcat -->
                 </configuration>
             </plugin>
         </plugins>
