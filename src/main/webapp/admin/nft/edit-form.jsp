@@ -27,7 +27,7 @@
         </div>
     </c:if>
 
-    <form action="NFTServlet?action=update" method="POST">
+    <form action="${pageContext.request.contextPath}/admin/nft/edit-form.jsp" method="POST">
         <input type="hidden" name="nftId" value="${nft.nftId}">
 
         <div class="mb-3">

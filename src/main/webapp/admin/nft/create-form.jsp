@@ -27,7 +27,7 @@
         </div>
     </c:if>
 
-    <form action="NFTServlet?action=add" method="POST">
+    <form action="${pageContext.request.contextPath}/admin/nft/create-form.jsp" method="POST">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" value="${nft != null ? nft.name : ''}" required>
